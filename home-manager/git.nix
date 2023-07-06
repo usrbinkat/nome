@@ -2,8 +2,8 @@
 
 {
   enable = true;
-  userName = "Luc Perkins";
-  userEmail = "lucperkins@gmail.com";
+  userName = "usrbinkat";
+  userEmail = "usrbinkat@braincraft.io";
   package = pkgs.gitAndTools.gitFull;
 
   delta = { enable = true; };
@@ -11,6 +11,7 @@
   lfs = { enable = true; };
 
   ignores = [
+    "result/"
     ".cache/"
     ".DS_Store"
     ".direnv/"
@@ -30,7 +31,7 @@
       whitespace = "trailing-space,space-before-tab";
     };
 
-    commit.gpgsign = "true";
+    commit.gpgsign = "false";
     gpg.program = "gpg2";
 
     protocol.keybase.allow = "always";
@@ -38,6 +39,6 @@
     pull.rebase = "false";
     init.defaultBranch = "main";
 
-    user = { signingkey = "3987C314C5E59CBF"; };
+    user = { signingkey = "REPLACEME"; };
   };
 }

@@ -52,7 +52,7 @@ in
   (nu "proj" ''
     def main [] {
       "Initializing Nome proj template"
-      nix flake init --template github:the-nix-way/nome
+      nix flake init --template github:usrbinkat/nome
     }
   '')
 
@@ -89,7 +89,7 @@ in
     def main [
       template: string, # The template to initialize
     ] {
-      nix flake init --template $"github:the-nix-way/nome#($template)"
+      nix flake init --template $"github:usrbinkat/nome#($template)"
     }
   '')
 
@@ -98,7 +98,7 @@ in
     def main [
       template: string, # The template
     ] {
-      nix flake init --template $"github:the-nix-way/dev-templates#($template)"
+      nix flake init --template $"github:usrbinkat/dev-templates#($template)"
     }
   '')
 
@@ -110,6 +110,6 @@ in
 
   # Open up this directory in VS Code for editing
   (nu "cfg" ''
-    code ${pkgs.homeDirectory}/the-nix-way/nome
+    code ${pkgs.homeDirectory}/usrbinkat/nome
   '')
 ]

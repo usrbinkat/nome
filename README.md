@@ -12,7 +12,7 @@ Nome is my **N**ix h**ome**. It encapsulates a range of Nix goodies that I use t
 What I run to activate my Home Manager configuration:
 
 ```shell
-nix build "github:the-nix-way/nome#homeConfigurations.lucperkins.activationPackage"
+nix build "github:usrbinkat/nome#homeConfigurations.usrbinkat.activationPackage"
 ./result/activate
 ```
 
@@ -32,7 +32,7 @@ Here's my baseline `flake.nix`:
 {
   description = "Local dev environment";
 
-  inputs = { nome.url = "github:the-nix-way/nome"; };
+  inputs = { nome.url = "github:usrbinkat/nome"; };
 
   outputs = { self, nome, ... }:
     nome.lib.mkEnv {
@@ -63,7 +63,7 @@ An important side effect of building tools to provide project-specific environme
 My Nome flake also exports a [NixOS](./nixos/) configuration that I use for experimentation. To apply that config on any NixOS machine:
 
 ```shell
-nixos-rebuild switch --flake "github:the-nix-way"
+nixos-rebuild switch --flake "github:usrbinkat"
 ```
 
 ## Scope
@@ -76,7 +76,7 @@ Stuff I'd like to change here:
 
 - Find a way to make nix-darwin install [Homebrew] for me
 
-[dev-templates]: https://github.com/the-nix-way/dev-templates
+[dev-templates]: https://github.com/usrbinkat/dev-templates
 [flakes]: https://nixos.wiki/wiki/Flakes
 [hm]: https://github.com/nix-community/home-manager
 [homebrew]: https://brew.sh

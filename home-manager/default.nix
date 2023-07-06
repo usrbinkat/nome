@@ -8,7 +8,7 @@
   home-manager = {
     useGlobalPkgs = true;
     users = {
-      lucperkins = { pkgs, ... }: {
+      usrbinkat = { pkgs, ... }: {
         home = {
           inherit (pkgs) stateVersion;
           packages = import ./packages.nix { inherit pkgs; };

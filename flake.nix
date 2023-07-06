@@ -21,7 +21,7 @@
     }:
 
     let
-      username = "lucperkins";
+      username = "usrbinkat";
       stateVersion = "22.11";
       caches = {
         nixos-org = {

@@ -41,7 +41,7 @@
     };
   };
 
-  users.users.lucperkins = {
+  users.users.usrbinkat= {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [

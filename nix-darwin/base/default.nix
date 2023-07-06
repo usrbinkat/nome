@@ -61,6 +61,6 @@
     system.keyboard.enableKeyMapping = true;
     security.pam.enableSudoTouchIdAuth = true;
 
-    users.users.lucperkins = { name = "lucperkins"; home = pkgs.homeDirectory; };
+    users.users.usrbinkat = { name = "usrbinkat"; home = pkgs.homeDirectory; };
   };
 }
